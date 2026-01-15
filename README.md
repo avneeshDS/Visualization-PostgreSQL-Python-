@@ -1,1 +1,1 @@
-This repository contains various plots generated from hospital data using SQL queries and open-source Python libraries such as pandas, matplotlib, and seaborn. The plots include bar charts, scatter plots, box plots, heatmaps
+This repository contains Python scripts and hospital data for generating various plots using SQL queries and open-source Python libraries such as pandas, matplotlib, and seaborn. The visualizations include bar charts, scatter plots, box plots, and heatmaps.
