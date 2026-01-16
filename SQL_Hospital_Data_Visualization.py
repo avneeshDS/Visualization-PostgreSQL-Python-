@@ -95,9 +95,9 @@ plt.show()
 
 ##pairplots
 
-import seaborn as sns
 sns.pairplot(df[['doctors_count', 'patient_count', 'medical_expenses', 'department']], 
              hue='department')
 plt.suptitle('Pairplot: Doctors, Patients, Expenses (by Department)', y=1.02)
 plt.show()
+
 
