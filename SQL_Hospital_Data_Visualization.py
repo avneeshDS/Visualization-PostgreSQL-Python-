@@ -1,7 +1,7 @@
 import psycopg2 
 print(psycopg2.__libpq_version__)
 connection = psycopg2.connect(user = "postgres",
-                              password = "itmm1315@VZU",
+                              password = "*******",
                               host = "localhost",
                               port = "5432",
                               database = "hospital")
@@ -99,6 +99,7 @@ sns.pairplot(df[['doctors_count', 'patient_count', 'medical_expenses', 'departme
              hue='department')
 plt.suptitle('Pairplot: Doctors, Patients, Expenses (by Department)', y=1.02)
 plt.show()
+
 
 
 
