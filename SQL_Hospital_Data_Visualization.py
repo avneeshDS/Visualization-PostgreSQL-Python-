@@ -23,12 +23,12 @@ font3 = {'family': 'Times New Roman', 'color': 'Red', 'size': 16}
 
 department_medicalexpenses = df.groupby('department')['medical_expenses'].sum().round(2)
 department_medicalexpenses.plot(kind = "bar")
-plt.title("Departmental Medical Expenses", fontdict=font3)
+plt.title("Departmental Total Medical Expenses", fontdict=font3)
 plt.xlabel("Department", fontdict= font2)
-plt.ylabel("Medical Expenses", fontdict= font2)
+plt.ylabel("Total Medical Expenses", fontdict= font2)
 plt.show()
 location_medicalexpenses = df.groupby('location')['medical_expenses'].sum().round(2)
-location_medicalexpenses.plot(kind = "bar", title= "Location-wise Medical Expenses")
+location_medicalexpenses.plot(kind = "bar", title= "Location-wise Total Medical Expenses")
 plt.show()
 hospitalname_medicalexpenses = df.groupby("hospital_name")['medical_expenses'].sum().round(2)
 hospitalname_medicalexpenses.plot(kind= "bar", title= "Hospital-Name Verus Medical Expenses")
@@ -99,5 +99,6 @@ sns.pairplot(df[['doctors_count', 'patient_count', 'medical_expenses', 'departme
              hue='department')
 plt.suptitle('Pairplot: Doctors, Patients, Expenses (by Department)', y=1.02)
 plt.show()
+
 
 
